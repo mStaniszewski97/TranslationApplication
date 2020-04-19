@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012">
+
+        <Spinner
+            android:id="@+id/translateSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/spinner_radius"
+            android:orientation="vertical"
+            android:prompt="@string/language_prompt" />
+
+        <Button
+            android:id="@+id/swapButton"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_margin="3dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.8"
+            android:background="@mipmap/ic_swap" />
+
+        <Spinner
+            android:id="@+id/resultSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/spinner_radius"
+            android:orientation="vertical"
+            android:prompt="@string/language_prompt" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/translateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201">
+
+
+        <Button
+            android:id="@+id/micButton"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="329dp"
+            android:layout_marginLeft="329dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/ic_mic"
+            android:enabled="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/translateText"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="203dp"
+            android:scrollHorizontally="false"
+            android:text="@string/defaultTranslateLanguage"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textToTranslate"
+            android:hint="@string/defaultHint"
+            android:layout_width="wrap_content"
+            android:layout_height="189dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/white"
+            android:importantForAutofill="no" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/responseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="329dp"
+            android:layout_marginLeft="329dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/ic_play"
+            android:enabled="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/responseText"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginRight="232dp"
+            android:layout_marginBottom="208dp"
+            android:scrollHorizontally="false"
+            android:text="@string/defaultResponseLanguage"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/synthesizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="189dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/white"
+            android:clickable="false"
+            android:textIsSelectable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:importantForAutofill="no" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/translateButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/radius"
+        android:text="@string/defaultButtonLanguage"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+</LinearLayout>

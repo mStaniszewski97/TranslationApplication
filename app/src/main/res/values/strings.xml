@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="defaultTranslateLanguage">Polish</string>
+    <string name="defaultResponseLanguage">Japanese</string>
+    <string name="defaultButtonLanguage">Translate</string>
+    <string name="defaultHint">Enter the text to translate</string>
+
+    <string name="language_prompt">Select Language</string>
+
+    <string-array name="country_arrays">
+        <item>Polish</item>
+        <item>English</item>
+        <item>Germany</item>
+        <item>Danish</item>
+        <item>French</item>
+        <item>Dutch</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Norwegian</item>
+        <item>Portuguese</item>'
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Turkish</item>
+    </string-array>
+
+    <string-array name="Polish">
+        <item>pl-PL</item>
+        <item>Wprowadź tekst do przetłumaczenia</item>
+        <item>Przetłumacz</item>
+    </string-array>
+
+    <string-array name="English">
+        <item>en-US</item>
+        <item>Enter the text to translate</item>
+        <item>Translate</item>
+    </string-array>
+
+    <string-array name="Germany">
+        <item>de-DE</item>
+        <item>Geben Sie den zu übersetzenden Text ein</item>
+        <item>Übersetzen</item>
+    </string-array>
+
+    <string-array name="Danish">
+        <item>da-DK</item>
+        <item>Indtast teksten, der skal oversættes</item>
+        <item>Oversætte</item>
+    </string-array>
+
+    <string-array name="French">
+        <item>fr-FR</item>
+        <item>Entrez le texte à traduire</item>
+        <item>Traduire</item>
+    </string-array>
+
+    <string-array name="Dutch">
+        <item>nl-NL</item>
+        <item>Voer de te vertalen tekst in</item>
+        <item>Vertaler</item>
+    </string-array>
+
+    <string-array name="Italian">
+        <item>it-IT</item>
+        <item>Inserisci il testo da tradurre</item>
+        <item>Tradurre</item>
+    </string-array>
+
+    <string-array name="Japanese">
+        <item>ja-JP</item>
+        <item>翻訳するテキストを入力してください</item>
+        <item>翻訳する</item>
+    </string-array>
+
+    <string-array name="Korean">
+        <item>ko-KR</item>
+        <item>번역 할 텍스트를 입력하십시오</item>
+        <item>옮기다</item>
+    </string-array>
+
+    <string-array name="Norwegian">
+        <item>nb-NO</item>
+        <item>Skriv inn teksten som skal oversettes</item>
+        <item>Oversette</item>
+    </string-array>
+
+    <string-array name="Portuguese">
+        <item>pt-BR</item>
+        <item>Digite o texto para traduzir</item>
+        <item>Traduzir</item>
+    </string-array>
+
+    <string-array name="Russian">
+        <item>ru-RU</item>
+        <item>Введите текст для перевода</item>
+        <item>Перевести</item>
+    </string-array>
+
+    <string-array name="Spanish">
+        <item>es-ES</item>
+        <item>Ingrese el texto para traducir</item>
+        <item>Traducir</item>
+    </string-array>
+
+    <string-array name="Turkish">
+        <item>tr-TR</item>
+        <item>Çevrilecek metni girin</item>
+        <item>Çevirmek</item>
+    </string-array>
+</resources>

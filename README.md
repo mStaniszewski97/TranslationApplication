@@ -1,5 +1,5 @@
 # TranslationApplication
-Translation application for android using AWS services and Kotlin. Thesis project.
+Translation application for android, using AWS services and Kotlin language. Thesis project.
 
 Amazon Web Services:
 * Translate
